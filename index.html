@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>João Omar - Portifolio</title>
+  <meta name="description" content="portifolio de João Omar">
+  <meta name="keywords" content="desenvolvedor, desenvolvedor júnior, engenheiro de software, programação, desenvolvimento web, desenvolvimento de software, linguagens de programação, JavaScript, TypeScript, Node, NodeJS, Python, Java, HTML, CSS, SQL, Git">
+
+  <style>
+
+    /* geral configs */
+
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: 'Mont';
+      color: white;
+    }
+
+    .layout {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-color: black;
+    }
+    
+    .main {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      gap: 1rem;
+    }
+
+    /* profile */
+
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid gray;
+    }
+
+    .sidebar .profile {
+      display: flex;
+      gap: 1rem;
+      flex-direction: row;
+      align-items: center;
+    }
+    
+    .profile .picture {
+      display: flex;
+      padding: 3px;
+      border: 1px solid gray;
+      border-radius: 100%;
+    }
+
+    .picture #img {
+      height: auto;
+      width: 24vw;
+      max-width: 140px;
+      border-radius: 100%;
+    }
+
+    .profile .info {
+      display: flex;
+      flex-direction: column;
+      gap: 2vh;
+    }
+
+    .info .info-header {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .info .name {
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    .info .role {
+      font-size: 16px;
+      font-weight: 600;
+      font-style: italic;
+    }
+
+    .phrase {
+      font-size: 12px;
+      font-style: italic;
+    }
+
+    .sidebar .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      list-style: none;
+    }
+
+    .links .link {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .links svg {
+      width: 18px;
+      height: auto;
+    }
+
+    .links a {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    /* main content */
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .content .title {
+      font-size: 24px;
+      font-weight: 800;
+    }
+
+    /* about me */
+
+    .content .about {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid gray;
+    }
+
+    .about .articles {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .about .my-stacks {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .my-stacks .stacks {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0.2rem;
+      font-size: 18px;
+    }
+
+    .stacks span {
+      font-weight: 600;
+      padding: 0.3rem;
+      color: black;
+      background-color: azure;
+      border-radius: 0.5rem;
+    }
+
+    /* projects */
+
+    .content .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .projects .cards-projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .cards-projects .project {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .project .info-project {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .project .detail-project {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .project .stacks-project {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .stacks-project .stacks-title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem;
+      border-top: 1px solid gray;
+    }
+
+    .footer .phrase {
+      display: none;
+    }
+
+    @media (min-width: 800px) {
+      .projects .cards-projects {
+        justify-content: center;
+      }
+    }
+
+    @media (min-width: 1280px) {
+      .main {
+        padding-top: 5vh;
+        max-width: 1000px;
+        margin: 0 auto;
+        flex-direction: row;
+        flex: 1 0 auto;
+      }
+
+      .sidebar {
+        padding: 1rem;
+        border-bottom: 0;
+      }
+
+      .sidebar .profile {
+        flex-direction: column;
+        align-items: start;
+      }
+
+      .profile .info-header {
+        border-bottom: 1px solid gray;
+        padding-bottom: 1rem;
+      }
+
+      .profile .phrase {
+        display: none;
+      }
+
+      .content {
+        padding: 1rem;
+      }
+
+      .projects .cards-projects {
+        justify-content: flex-start;
+      }
+
+      .cards-projects .project {
+        max-width: 400px;
+      }
+
+      .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .footer .phrase {
+        display: block;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  </style>
+
+</head>
+<body>
+  <section class="layout">
+
+    <main class="main">
+
+      <div class="sidebar">
+
+        <div class="profile">
+
+          <picture class="picture">
+            <img src="https://avatars.githubusercontent.com/u/107709213?v=4" alt="Foto de perfil" id="img">
+          </picture>
+          
+          <div class="info">
+            <div class="info-header">
+              <span class="name">João Omar</span>
+              <span class="role">Desenvolvedor</span>
+            </div>
+            <span class="phrase">&quot;O aprendizado é contínuo, e sempre haverá um próximo nível !&quot;</span>
+          </div>
+
+        </div>
+
+        <ul class="links">
+          <li><a href="http://linkedin.com/in/devjomar" target="_blank">Linkedin</a></li>
+          <li><a href="http://github.com/devjomar" target="_blank">Github</a></li>
+          <li><a href="emailto:devjomar.jobs@gmail.com">Email</a></li>
+          <li>
+            <a href="/assets/Curriculo.pdf" download="Curriculo - João Omar.pdf" class="link">
+              Currículo
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M720-330q0 104-73 177T470-80q-104 0-177-73t-73-177v-370q0-75 52.5-127.5T400-880q75 0 127.5 52.5T580-700v350q0 46-32 78t-78 32q-46 0-78-32t-32-78v-370h80v370q0 13 8.5 21.5T470-320q13 0 21.5-8.5T500-350v-350q-1-42-29.5-71T400-800q-42 0-71 29t-29 71v370q-1 71 49 120.5T470-160q70 0 119-49.5T640-330v-390h80v390Z"/></svg>
+            </a>
+          </li>
+        </ul>
+        
+      </div>
+
+      <div class="content">
+
+        <div class="about">
+          <span class="title">Sobre mim</span>
+
+          <div class="articles">
+            <article>
+              Prazer, me chamo João Omar, tenho 21 anos e sou estudante de Sistemas de Informação e Análise e Desenvolvimento de Sistemas.
+              Inspirado por transformar ideias em realidade por meio da programação. 
+              Estou constantemente aprimorando minhas habilidades e buscando oportunidades que me permitam crescer profissionalmente.
+            </article>
+            <article>
+              Minha motivação vem de ver o impacto positivo que a tecnologia pode ter no nosso cotidiano. 
+              Procuro colaborar com minhas ideias para melhorar e otimizar o dia a dia das pessoas, além de resolver quaisquer outras adversidades.
+            </article>
+            <article>
+              Estou pronto para enfrentar novos desafios e aprender habilidades que me levarão ao próximo nível.
+            </article>
+          </div>
+
+          <div class="my-stacks">
+            <h3>Principais Stacks</h3>
+            <div class="stacks">
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>C#</span>
+              <span>SQL | NoSQL</span>
+              <span>Git | Github</span>
+              <span>Docker</span>
+              <span>NodeJS</span>
+              <span>NextJS</span>
+              <span>NestJS</span>
+              <span>ASP.Net Core</span>
+              <span>Testes Unitários</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects">
+          <span class="title">Projetos</span>
+
+          <div class="cards-projects">
+            <div class="project">
+              <span class="info-project">2M Manager</span>
+              <article class="detail-project">
+                Para obter maior controle de seus funcionários, a <a href="http://http://www.2meng.com.br/" target="_blank" rel="noopener noreferrer">2M Engenharia</a> socilitou um software estilo
+                ERP/CRM para obter um melhor controle do fluxo de admissão, demissão da empresa e serviços prestados.
+              </article>
+              <article class="stacks-project">
+                <span class="stacks-title">Stacks:</span>
+                <span class="stacks">NextJS, NestJS, Postgres, Google Cloud Plataform</span>
+              </article>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <script>
+        const p = document.createElement('p');
+        p.textContent = `© ${new Date().getFullYear()} Omar`;
+        document.querySelector('.footer').appendChild(p);
+      </script>
+      <span class="phrase">&quot;O aprendizado é contínuo, e sempre haverá um próximo nível !&quot;</span>
+    </footer>
+  </section>
+</body>
+</html>
