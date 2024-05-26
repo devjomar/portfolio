@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>João Omar - Portifolio</title>
+  <title>Portifolio - João Omar</title>
   <meta name="description" content="portifolio de João Omar">
   <meta name="keywords" content="desenvolvedor, desenvolvedor júnior, engenheiro de software, programação, desenvolvimento web, desenvolvimento de software, linguagens de programação, JavaScript, TypeScript, Node, NodeJS, Python, Java, HTML, CSS, SQL, Git">
 
@@ -15,7 +15,7 @@
       box-sizing: border-box;
       padding: 0;
       margin: 0;
-      font-family: 'Mont';
+      font-family: 'Mont', Arial, Helvetica, sans-serif;
       color: white;
     }
 
@@ -67,12 +67,7 @@
     .profile .info {
       display: flex;
       flex-direction: column;
-      gap: 2vh;
-    }
-
-    .info .info-header {
-      display: flex;
-      flex-direction: column;
+      padding-bottom: 1rem;
     }
 
     .info .name {
@@ -145,10 +140,50 @@
       font-weight: 500;
     }
 
+    .about .phrase {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .content .formations {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid gray;
+    }
+
+    .formations .title-formation {
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    .formations .education {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .education .curse-education {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .education .institution-education {
+      font-size: 16px;
+      font-weight: 300;
+    }
+
     .about .my-stacks {
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid gray;
+    }
+
+    .my-stacks .title-stacks {
+      font-size: 20px;
+      font-weight: 800;
     }
 
     .my-stacks .stacks {
@@ -245,16 +280,12 @@
         align-items: start;
       }
 
-      .profile .info-header {
-        border-bottom: 1px solid gray;
-        padding-bottom: 1rem;
-      }
-
       .profile .phrase {
         display: none;
       }
 
       .content {
+        overflow-y: hidden;
         padding: 1rem;
       }
 
@@ -271,13 +302,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 0.5rem;
-      }
-
-      .footer .phrase {
-        display: block;
-        font-size: 14px;
-        font-weight: 500;
       }
     }
   </style>
@@ -297,11 +321,8 @@
           </picture>
           
           <div class="info">
-            <div class="info-header">
-              <span class="name">João Omar</span>
-              <span class="role">Desenvolvedor</span>
-            </div>
-            <span class="phrase">&quot;O aprendizado é contínuo, e sempre haverá um próximo nível !&quot;</span>
+            <span class="name">João Omar</span>
+            <span class="role">Desenvolvedor</span>
           </div>
 
         </div>
@@ -309,11 +330,11 @@
         <ul class="links">
           <li><a href="http://linkedin.com/in/devjomar" target="_blank">Linkedin</a></li>
           <li><a href="http://github.com/devjomar" target="_blank">Github</a></li>
-          <li><a href="emailto:devjomar.jobs@gmail.com">Email</a></li>
+          <li><a href="mailto:devjomar.jobs@gmail.com">Email</a></li>
           <li>
             <a href="/assets/Curriculo.pdf" download="Curriculo - João Omar.pdf" class="link">
               Currículo
-              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M720-330q0 104-73 177T470-80q-104 0-177-73t-73-177v-370q0-75 52.5-127.5T400-880q75 0 127.5 52.5T580-700v350q0 46-32 78t-78 32q-46 0-78-32t-32-78v-370h80v370q0 13 8.5 21.5T470-320q13 0 21.5-8.5T500-350v-350q-1-42-29.5-71T400-800q-42 0-71 29t-29 71v370q-1 71 49 120.5T470-160q70 0 119-49.5T640-330v-390h80v390Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
             </a>
           </li>
         </ul>
@@ -338,10 +359,28 @@
             <article>
               Estou pronto para enfrentar novos desafios e aprender habilidades que me levarão ao próximo nível.
             </article>
+
+            <span class="phrase">&quot;O aprendizado é contínuo, e sempre haverá um próximo nível !&quot;</span>
+          </div>
+
+          <div class="formations">
+            <span class="title-formation">Formação</span>
+            <div class="education">
+              <span class="curse-education">Sistemas da Informação</span>
+              <span class="institution-education">Instituto Federal de Educação, Ciência e Tecnologia da Bahia</span>
+            </div>
+            <div class="education">
+              <span class="curse-education">Análise e Desenvolvimento de Sistemas</span>
+              <span class="institution-education">Universidade Salvador</span>
+            </div>
+            <div class="education">
+              <span class="curse-education">Desenvolvimento Web FullStack JavaScript</span>
+              <span class="institution-education">OneBitCode</span>
+            </div>
           </div>
 
           <div class="my-stacks">
-            <h3>Principais Stacks</h3>
+            <span class="title-stacks">Principais Stacks</span>
             <div class="stacks">
               <span>JavaScript</span>
               <span>TypeScript</span>
@@ -387,7 +426,6 @@
         p.textContent = `© ${new Date().getFullYear()} Omar`;
         document.querySelector('.footer').appendChild(p);
       </script>
-      <span class="phrase">&quot;O aprendizado é contínuo, e sempre haverá um próximo nível !&quot;</span>
     </footer>
   </section>
 </body>
