@@ -6,7 +6,7 @@ const sora = Sora({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "João Omar",
-  description: "Portfolio de João Omar",
+  description: "João Omar Portfolio",
 };
 
 export default function RootLayout({
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body className={`${sora.className} bg-green-500`}>{children}</body>
+      <body className={sora.className}>{children}</body>
     </html>
   );
 }
