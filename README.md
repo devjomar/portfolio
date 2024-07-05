@@ -1,1 +1,1 @@
-<h1 align="center">This is my portfolio, <a href="https://devjomar.vercel.app">visit !</a></h1>
+<h1 align="center">This is my portfolio, <a href="https://devjomar.vercel.app" target="_blank">visit !</a></h1>
