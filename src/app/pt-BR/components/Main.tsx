@@ -1,6 +1,5 @@
-import { DownloadSimple, GithubLogo, LinkedinLogo, Translate } from "@phosphor-icons/react/dist/ssr";
+import { DownloadSimple, GithubLogo, LinkedinLogo } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
-import Link from "next/link";
 import Coder from "../../../../public/coder.svg";
 
 export function Main() {
@@ -28,26 +27,16 @@ export function Main() {
           </div>
           
           <nav className="flex items-center gap-5 -ml-1">
-            <nav className="flex items-center gap-5">
-              <a href="https://linkedin.com/in/devjomar" target="_blank">
-                <LinkedinLogo size={48} weight="fill" className="hover:text-neutral" />
-              </a>
-              <a href="https://github.com/devjomar" target="_blank">
-                <GithubLogo size={48} weight="fill" className="hover:text-neutral" />
-              </a>
-            </nav>
-
-            <nav className="flex items-center gap-5">
-              <div className="border-r border-black pr-5">
-                <Link href="/en-US" key="link-enus" className="flex items-center duration-300 hover:text-neutral">
-                  <Translate weight="bold" size={30} />
-                </Link>
-              </div>
-              <a href="/curriculo.pdf" download="João Omar - Curriculo.pdf" className="flex items-center gap-2 py-2 px-3 font-bold rounded-md bg-black text-white duration-300 hover:bg-neutral">
-                <span>Curriculo</span>
-                <DownloadSimple weight="bold" />
-              </a>
-            </nav>
+            <a href="https://linkedin.com/in/devjomar" target="_blank">
+              <LinkedinLogo size={48} weight="fill" className="hover:text-neutral" />
+            </a>
+            <a href="https://github.com/devjomar" target="_blank">
+              <GithubLogo size={48} weight="fill" className="hover:text-neutral" />
+            </a>
+            <a href="/curriculo.pdf" download="João Omar - Curriculo.pdf" className="flex items-center gap-2 py-2 px-3 font-bold rounded-md bg-black text-white duration-300 hover:bg-neutral">
+              <span>Curriculo</span>
+              <DownloadSimple weight="bold" />
+            </a>
           </nav>
         </div>
 
