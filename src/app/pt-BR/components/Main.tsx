@@ -22,7 +22,7 @@ export function Main() {
             <h3 className="text-base xl:text-xl 2xl:text-3xl text-neutral">
               Com um ano de experiência, concentrado principalmente no desenvolvimento com
               JavaScript. Tenho experiência significativa com o ambiente
-              Node.js e frameworks como Next.js e Nest.js.
+              Node.js, Golang e C#.
             </h3>
           </div>
           

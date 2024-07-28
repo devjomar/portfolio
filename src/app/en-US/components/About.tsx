@@ -27,16 +27,16 @@ export function About() {
               and back-end, using the best development practices.
             </p>
             <p>
-              In addition to JavaScript, I have delved deeply into languages like Python, C#, and
-              Golang for different solutions. Furthermore, I have been studying DevOps and UI/UX
+              In addition to JavaScript, I have delved deeply into languages like Golang and C#
+              for different solutions. Furthermore, I have been studying DevOps and UI/UX
               Design to understand how best practices in quality are applied, both in software
               development and in user experience, as well as in the precise definition of project
               requirements.
             </p>
             <p>
-              My motivation comes from seeing the positive impact that technology can have on our
-              daily lives. I aim to contribute my ideas to enhance and optimize people&apos;s daily
-              routines.
+              My motivation stems from the positive impact that technology can have on our daily lives.
+              Beyond technical skills, I value collaboration and teamwork. Programming is a collective 
+              effort, and I am always willing to share knowledge to contribute to a productive work environment.
             </p>
           </article>
         </div>

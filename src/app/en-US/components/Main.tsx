@@ -20,9 +20,8 @@ export function Main() {
               </h2>
             </div>
             <h3 className="text-base xl:text-xl 2xl:text-3xl text-neutral">
-              With one year of experience, mainly focused on JavaScript development.
-              I have significant experience with the Node.js environment and frameworks
-              like Next.js and Nest.js.
+	      With one year of experience, mainly focused on JavaScript development. 
+	      I have significant experience with Node.js, Golang and C# environments.
             </h3>
           </div>
           

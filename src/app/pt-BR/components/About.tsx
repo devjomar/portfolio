@@ -27,15 +27,17 @@ export function About() {
               no back-end, utilizando as melhores práticas de desenvolvimento.
             </p>
             <p>
-              Além do JavaScript, tenho explorado profundamente linguages como Python, C# e Golang
+              Além do JavaScript, tenho explorado profundamente linguages como Golang e C#
               para diferentes soluções. Mais a fundo, venho estudando DevOps e
               UI/UX Design para compreender como são aplicadas as melhores práticas de
               qualidade, tanto no desenvolvimento de software quanto na experiência do usuário e na
               definição precisa dos requisitos do projeto.
             </p>
             <p>
-              Minha motivação vem de ver o impacto positivo que a tecnologia pode ter no nosso
-              cotidiano. Procuro colaborar com minhas ideias para melhorar e otimizar o dia a dia das pessoas.
+              Minha motivação vem do impacto positivo que a tecnologia pode trazer ao nosso cotidiano. 
+              Além das habilidades técnicas, valorizo a colaboração e o trabalho em equipe. 
+              Programação é um esforço coletivo e estou sempre disposto a compartilhar conhecimento 
+              para contribuir num ambiente de trabalho produtivo.
             </p>
           </article>
         </div>
