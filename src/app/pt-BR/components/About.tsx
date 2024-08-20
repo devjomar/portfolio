@@ -27,10 +27,10 @@ export function About() {
               no back-end, utilizando as melhores práticas de desenvolvimento.
             </p>
             <p>
-              Além do JavaScript, tenho explorado profundamente linguages como Golang e C#
-              para diferentes soluções. Mais a fundo, venho estudando DevOps e
-              UI/UX Design para compreender como são aplicadas as melhores práticas de
-              qualidade, tanto no desenvolvimento de software quanto na experiência do usuário e na
+              Além do NodeJS, tenho explorado profundamente o ambiente .NET
+              para diferentes soluções. Mais a fundo, venho estudando DevOps
+              para compreender como são aplicadas as melhores práticas de
+              qualidade no desenvolvimento de software e na
               definição precisa dos requisitos do projeto.
             </p>
             <p>

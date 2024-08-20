@@ -13,15 +13,15 @@ export function Main() {
           <div className="flex flex-col gap-5">
             <div className="flex flex-col gap-1">
               <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
-                Hi, I&apos;m <strong>João Omar.</strong>
+                <strong>Hi</strong>, I&apos;m <strong>João Omar.</strong>
               </h1>
               <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
-                <strong>Web</strong> Developer
+                <strong>Software</strong> Engineer
               </h2>
             </div>
             <h3 className="text-base xl:text-xl 2xl:text-3xl text-neutral">
-	      With one year of experience, mainly focused on JavaScript development. 
-	      I have significant experience with Node.js, Golang and C# environments.
+	      With one year of experience, mainly focused on backend development. 
+	      I have significant experience with NodeJS and .NET environments.
             </h3>
           </div>
           

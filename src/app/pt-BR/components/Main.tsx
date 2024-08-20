@@ -16,13 +16,13 @@ export function Main() {
                 Prazer, <strong>João Omar.</strong>
               </h1>
               <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
-                <strong>Desenvolvedor</strong> Web
+                <strong>Engenheiro</strong> de <strong>Software</strong>
               </h2>
             </div>
             <h3 className="text-base xl:text-xl 2xl:text-3xl text-neutral">
-              Com um ano de experiência, concentrado principalmente no desenvolvimento com
-              JavaScript. Tenho experiência significativa com o ambiente
-              Node.js, Golang e C#.
+              Com um ano de experiência, concentrado principalmente no desenvolvimento
+              backend. Tenho experiência significativa com os ambientes
+              NodeJS e .NET.
             </h3>
           </div>
           
